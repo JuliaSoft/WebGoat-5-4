@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="webgoat" basedir="." default="jspc">
+
+	<import file="C:\opt\apache-tomcat-7.0.52\bin\catalina-tasks.xml" />
+
+    <property name="webapp.path" value="C:\Users\tom\workspace-poste-webgoat\WebGoat-5.4\WebContent"/>
+ 
+	<target name="jspc">
+		<jasper uriroot="${webapp.path}" 
+			webXmlFragment="${webapp.path}/WEB-INF/generated_web.xml" outputDir="${webapp.path}/WEB-INF/src" />
+	</target>
+
+</project>
